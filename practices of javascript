@@ -1,0 +1,37 @@
+-----practices----
+-----variables---
+var y='shalini';alert(y)
+undefined
+var y="shalini";alert(y);
+
+{var a=7; console.log(5);}
+5
+{ let a=5;console.log(a);}
+5
+{a=5;console.log(a);}
+5
+undefined
+let x;x=5;console.log(x);
+5
+
+----addition------
+
+var a=1;var b=2;var c= a+b;console.log(c);
+3
+var a='sha';var b='lini';var c= a+b;console.log(c);
+"shalini"
+
+-----object--
+var obj={ name="shalini"}; console.log(obj);
+"Invalid shorthand property initializer"----(we need to use :)
+
+var obj={ name:"shalini"}; console.log(obj);
+[object Object] {
+  name: "shalini"
+}
+---
+var BOOK1={ name1:"JAVA",name2:"javascript"}; console.log(BOOK1);
+[object Object] {
+  name1: "JAVA",
+  name2: "javascript"
+}
