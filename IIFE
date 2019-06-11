@@ -1,0 +1,10 @@
+const fn=(function()
+{var private=1;
+return function(){return private++;
+}})();
+console.log(fn());
+console.log(fn());console.log(fn());
+1
+2
+3
+undefined
