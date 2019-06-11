@@ -1,0 +1,73 @@
+--synchronous---callback
+function one(){
+              console.log(1);
+              }
+function two(){
+              console.log(2);
+              }
+one();
+two();
+output
+1
+2
+undefined
+function one(){
+              console.log('shalini');
+              }
+function two(){
+              console.log('dd');
+              }
+one();
+two();
+
+output
+"shalini"
+"dd"
+undefined
+
+
+Asynchronous
+function one(){
+                 console.log('shalini');
+               }
+function two(){ setTimeout( function(){
+                console.log('dd');
+              }, 500 );
+
+             }
+two();
+one();
+
+output
+
+"shalini"
+undefined
+"dd"
+
+
+---callback----
+
+
+const add1 = (data, callback) => callback(data+1, finalResult); 
+
+
+const add2 = (data, callback) => callback(data+2); 
+
+
+const finalResult = (data) => console.log(data); 
+
+
+const fn = (callback) => {
+
+ setTimeout(() => {
+
+ callback(600, add2);
+
+ }, 1000);
+
+};
+
+
+fn(add1);
+undefined
+603
